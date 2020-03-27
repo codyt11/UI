@@ -20,6 +20,13 @@ nav a{
     color: white;
     text-decoration: none;
 }
+nav a:hover{
+    color:yellow;
+    font-size: 32px;
+}
+.navbar{
+    margin:10px 25px;
+}
 h1{
     color:white;
     text-align: center;
