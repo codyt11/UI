@@ -1,4 +1,10 @@
 
+*{
+    color: white;
+}
+body{
+    background-image: url(../images/barbell.jpg);
+}
 header{
     background:rgb(107, 1, 1);
     display: flex;
@@ -14,17 +20,34 @@ nav a{
     color: white;
     text-decoration: none;
 }
+nav a:hover{
+    color:yellow;
+    font-size: 32px;
+}
+.navbar{
+    margin:10px 25px;
+}
 h1{
     color:white;
     text-align: center;
     font-size: 50px;
 }
-body{
-    background:rgb(110, 110, 110);
+
+.dropdown{
+    position: relative;
+    display: inline-block;
 }
+.dropbtn{
+border:none;
+}
+.dropbtn:hover, .dropbtn:focus{
+    background-color:gray;
+}
+
 .dropdown-content{
-    display:flex;
-    flex-direction: column;
+   display:none;
+   position:absolute;
+   background-color: gray;
 }
 .container1{
     display: flex;
@@ -48,12 +71,15 @@ h2{
 h4{
     font-size: 35px;
 }
+h3{
+    font-size: 40px;
+}
 .img1{
     display: flex;
     width:50%;
     margin:20px;
 }
-.img1 .barbell{
+.img1 .flex{
     display:flex;
     width: 100%;
 }
@@ -80,4 +106,43 @@ justify-content: space-between;
 .profile3{
     width:75%;
     margin:15px;
+}
+.container3{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.fitness{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width:30%;
+}
+.pic{
+    width:30%;
+}
+.pic .body{
+    width:100%;
+}
+.goals{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    line-height: 60px;
+}
+.goals ol{
+    font-size: 30px;
+}
+footer{
+    background: black;
+}
+.contact{
+    line-height: 30px;
+    margin:10px;
+    padding:15px;
+}
+.copy{
+    text-align: center;
 }
